@@ -27,4 +27,9 @@ public class DogRestController {
         col.add(new Dog("Mr. Vuff6", "http://i.giphy.com/fW9Wg5uTY5HUc.gif", "2", "Vuf!"));
         return new ResponseEntity<>(col, HttpStatus.OK);
     }
+
+    @RequestMapping("/dogs/version")
+    public ResponseEntity<String> version(){
+        return new ResponseEntity<>("v2", HttpStatus.OK);
+    }
 }
