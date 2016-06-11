@@ -30,6 +30,6 @@ public class DogRestController {
 
     @RequestMapping("/dogs/version")
     public ResponseEntity<String> version(){
-        return new ResponseEntity<>("v2", HttpStatus.OK);
+        return new ResponseEntity<>("v4", HttpStatus.OK);
     }
 }
